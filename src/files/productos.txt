@@ -1,0 +1,23 @@
+[
+  {
+    "titulo": "Creality Ender 5 Plus",
+    "precio": 116900,
+    "marca": "Creality",
+    "tipo": "Impresora 3D FDM",
+    "stock": "10",
+    "codigo": "C006",
+    "imagen": "http://localhost:8080//imagenes/16388298516602 ender 5 plus.PNG",
+    "timestamp": "17:23:09",
+    "id": 1
+  },
+  {
+    "titulo": "Hellbot Hidra 220",
+    "marca": "Hellbot",
+    "tipo": "Impresora 3D FDM",
+    "imagen": "http://localhost:8080//imagenes/1638833111277preventa UW-01.jpg",
+    "descripcion": "Sin descripcion",
+    "precio": 84500,
+    "id": 2,
+    "timestamp": "17:23:57"
+  }
+]
