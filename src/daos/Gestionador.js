@@ -1,6 +1,8 @@
 let productos;
 let carrito;
-let persistencia = 'fileSystem';
+let usuario;
+let mensaje;
+let persistencia = 'mongo';
 
 switch(persistencia){
     case 'fileSystem':
@@ -14,14 +16,13 @@ switch(persistencia){
     case 'mongo':
         const {default:prodMongo} = await import ('./productos/prodMongo.js')
         const {default:carritoMongo} = await import ('./carrito/carritoMongo.js')
+        const {default:user} = await import ('./users/user.js')
+        const {default:mensajes} = await import ('./mensajes/mensaje.js')
 
         productos = new prodMongo()
         carrito = new carritoMongo()
-        break;
-
-    case 'firebase':
-        
-
+        usuario = new user()
+        mensaje = new mensajes()
         break;
     default:
 
@@ -34,4 +35,4 @@ switch(persistencia){
 //     databaseURL:'http://proyectoprueba-5af0a.firebaseio.com'
 // })
 
-export {productos, carrito}
+export {productos, carrito, mensaje}

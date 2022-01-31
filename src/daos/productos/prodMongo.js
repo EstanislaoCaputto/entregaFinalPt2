@@ -4,12 +4,12 @@ export default class ProductMongo extends MongoContainer{
     constructor(){
         super('productos',
         {
-            titulo:{type:String, required:true},
+            name:{type:String, required:true},
             marca:{type:String, required:true, default:'Sin Marca'},
-            tipo:{type:String, required:true},
-            imagen:{type:String, required:true},
-            descripcion:{type:String, default:'Sin descripcion'},
-            precio:{type:Number, required:true}
+            categories:{type:Array, required:true},
+            images:{type:Array, required:true},
+            description:{type:String, default:'Sin descripcion'},
+            prices:{type:Array, required:true}
         },{timestamps:true}
         )
     }

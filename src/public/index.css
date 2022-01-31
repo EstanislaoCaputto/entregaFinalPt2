@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    height: 100%;
+    background-color: tomato;
+}
+
+.contenedor-objetos{
+    display: flex;
+    flex-direction: row nowrap;
+    padding: 1px 3px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black ;
+}
+
+.img-prod{
+    height: 180px;
+    width: 180px;
+}
